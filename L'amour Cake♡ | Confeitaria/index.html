@@ -13,7 +13,6 @@
 
     <title>L'amour Cake♡ | Confeitaria</title>
 
-    <!-- Bootstrap CSS -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -21,45 +20,39 @@
         crossorigin="anonymous"
     >
 
-    <!-- CSS desenvolvido por outro integrante -->
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style.css">
 
-    <!-- JavaScript desenvolvido por outro integrante -->
     <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- CABEÇALHO -->
     <header id="inicio">
 
         <div class="logo">
-            <a href="#inicio" aria-label="L'amour Cake - Página inicial">
+            <a href="index.html#inicio" aria-label="L'amour Cake - Página inicial">
                 <h1>L'amour Cake♡</h1>
             </a>
 
             <p>Sweet Moments</p>
         </div>
 
-        <!-- MENU DE NAVEGAÇÃO -->
         <nav aria-label="Menu principal">
             <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#menu">Pedidos</a></li>
-                <li><a href="#relatorios">Relatórios</a></li>
-                <li><a href="#estoque">Estoque</a></li>
-                <li><a href="#sobre">Sobre nós</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="index.html#inicio">Início</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="estoque.html">Estoque</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
 
     </header>
 
-    <!-- CONTEÚDO PRINCIPAL -->
     <main>
 
-        <!-- APRESENTAÇÃO -->
         <section id="apresentacao" aria-labelledby="titulo-apresentacao">
 
             <div class="apresentacao-conteudo">
@@ -75,7 +68,7 @@
                     especialmente para tornar cada momento inesquecível.
                 </p>
 
-                <a href="#produtos" class="botao btn btn-primary btn-lg">
+                <a href="index.html#produtos" class="botao btn btn-primary btn-lg">
                     Conheça nossos produtos
                 </a>
 
@@ -83,7 +76,6 @@
 
         </section>
 
-        <!-- CATÁLOGO DE PRODUTOS -->
         <section id="produtos" aria-labelledby="titulo-produtos">
 
             <header class="secao-cabecalho">
@@ -98,7 +90,6 @@
 
             </header>
 
-            <!-- PESQUISA E FILTROS -->
             <div class="filtros-produtos">
 
                 <div class="campo-formulario">
@@ -126,380 +117,14 @@
 
             </div>
 
-            <!-- OS PRODUTOS SERÃO INSERIDOS PELO JAVASCRIPT -->
             <div id="productGrid" class="grade-produtos">
-
                 <p>Os produtos serão apresentados aqui.</p>
-
             </div>
-
-        </section>
-
-        <!-- ÁREA DE PEDIDOS -->
-        <section id="menu" aria-labelledby="titulo-pedidos">
-
-            <header class="secao-cabecalho">
-
-                <p class="subtitulo">Seu pedido</p>
-
-                <h2 id="titulo-pedidos">Monte seu pedido</h2>
-
-                <p>
-                    Selecione os produtos, confira as quantidades
-                    e acompanhe o valor total.
-                </p>
-
-            </header>
-
-            <div class="area-pedidos">
-
-                <!-- PRODUTOS DISPONÍVEIS PARA PEDIDO -->
-                <section
-                    id="lista-produtos-pedido"
-                    aria-labelledby="titulo-lista-pedido"
-                >
-
-                    <h3 id="titulo-lista-pedido">
-                        Produtos disponíveis
-                    </h3>
-
-                    <div id="menuList">
-                        <p>
-                            Os produtos disponíveis para pedido aparecerão aqui.
-                        </p>
-                    </div>
-
-                </section>
-
-                <!-- CARRINHO DE COMPRAS -->
-                <section
-                    id="carrinho"
-                    aria-labelledby="titulo-carrinho"
-                >
-
-                    <h3 id="titulo-carrinho">Seu carrinho</h3>
-
-                    <div class="campo-formulario campo-cliente">
-                        <label for="customerName">Nome do cliente:</label>
-                        <input
-                            type="text"
-                            id="customerName"
-                            name="customerName"
-                            class="form-control"
-                            placeholder="Ex.: Ana Souza"
-                            autocomplete="name"
-                        >
-                    </div>
-
-                    <div id="cartItems" aria-live="polite">
-                        <p>Seu carrinho está vazio.</p>
-                    </div>
-
-                    <!-- TOTAL DO PEDIDO -->
-                    <div class="resumo-pedido">
-
-                        <p>
-                            <strong>Total do pedido:</strong>
-
-                            <output id="cartTotal" aria-live="polite">
-                                R$ 0,00
-                            </output>
-                        </p>
-
-                    </div>
-
-                    <!-- AÇÕES DO CARRINHO -->
-                    <div class="acoes-carrinho">
-
-                        <button type="button" id="clearCart" class="btn btn-outline-secondary">
-                            Limpar carrinho
-                        </button>
-
-                        <button type="button" id="finishOrder" class="btn btn-primary">
-                            Finalizar pedido
-                        </button>
-
-                    </div>
-
-                </section>
-
-            </div>
-
-        </section>
-
-        <!-- RELATÓRIOS DE PEDIDOS -->
-        <section id="relatorios" aria-labelledby="titulo-relatorios">
-
-            <header class="secao-cabecalho">
-
-                <p class="subtitulo">Acompanhe os resultados</p>
-
-                <h2 id="titulo-relatorios">Relatórios de pedidos</h2>
-
-                <p>
-                    Consulte o resumo dos pedidos registrados no sistema.
-                </p>
-
-            </header>
-
-            <!-- RESUMO DOS RESULTADOS -->
-            <div class="resumo-relatorios">
-
-                <article class="cartao-relatorio card shadow-sm">
-
-                    <h3>Pedidos realizados</h3>
-
-                    <p id="reportOrders" aria-live="polite">0</p>
-
-                </article>
-
-                <article class="cartao-relatorio card shadow-sm">
-
-                    <h3>Valor total vendido</h3>
-
-                    <p id="reportRevenue" aria-live="polite">
-                        R$ 0,00
-                    </p>
-
-                </article>
-
-                <article class="cartao-relatorio card shadow-sm">
-
-                    <h3>Itens vendidos</h3>
-
-                    <p id="reportItems" aria-live="polite">0</p>
-
-                </article>
-
-            </div>
-
-            <!-- HISTÓRICO DE PEDIDOS -->
-            <div class="tabela-container table-responsive">
-
-                <table id="reportTable" class="table table-hover align-middle mb-0">
-
-                    <caption>Histórico de pedidos</caption>
-
-                    <thead>
-                        <tr>
-                            <th scope="col">Número do pedido</th>
-                            <th scope="col">Produtos</th>
-                            <th scope="col">Quantidade</th>
-                            <th scope="col">Valor total</th>
-                            <th scope="col">Status</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td colspan="5">
-                                Nenhum pedido registrado.
-                            </td>
-                        </tr>
-                    </tbody>
-
-                </table>
-
-            </div>
-
-            <!-- BOTÃO DOS RELATÓRIOS -->
-            <div class="acoes-relatorios">
-
-                <button type="button" id="resetReports" class="btn btn-outline-secondary">
-                    Limpar relatórios
-                </button>
-
-            </div>
-
-        </section>
-
-        <!-- CONTROLE DE ESTOQUE -->
-        <section id="estoque" aria-labelledby="titulo-estoque">
-
-            <header class="secao-cabecalho">
-
-                <p class="subtitulo">Organização da confeitaria</p>
-
-                <h2 id="titulo-estoque">Controle de estoque</h2>
-
-                <p>
-                    Consulte as quantidades disponíveis de cada produto
-                    e acompanhe as informações do estoque.
-                </p>
-
-            </header>
-
-            <form id="productForm" class="formulario-produto">
-                <h3>Cadastrar produto no estoque</h3>
-                <div class="campo-formulario">
-                    <label for="newProductName">Nome do produto:</label>
-                    <input id="newProductName" name="name" class="form-control" required maxlength="60" placeholder="Ex.: Bolo de cenoura">
-                </div>
-                <div class="campo-formulario">
-                    <label for="newProductCategory">Categoria:</label>
-                    <select id="newProductCategory" name="category" class="form-select" required>
-                        <option value="bolos">Bolos</option>
-                        <option value="cupcakes">Cupcakes</option>
-                        <option value="doces">Doces</option>
-                    </select>
-                </div>
-                <div class="campo-formulario">
-                    <label for="newProductPrice">Preço (R$):</label>
-                    <input id="newProductPrice" name="price" class="form-control" type="number" min="0.01" step="0.01" required placeholder="0,00">
-                </div>
-                <div class="campo-formulario">
-                    <label for="newProductStock">Quantidade inicial:</label>
-                    <input id="newProductStock" name="stock" class="form-control" type="number" min="0" step="1" required placeholder="0">
-                </div>
-                <button type="submit" class="btn btn-primary">Cadastrar produto</button>
-            </form>
-
-            <!-- TABELA DE ESTOQUE -->
-            <div class="tabela-container table-responsive">
-
-                <table id="stockTable" class="table table-hover align-middle mb-0">
-
-                    <caption>Produtos disponíveis em estoque</caption>
-
-                    <thead>
-                        <tr>
-                            <th scope="col">Produto</th>
-                            <th scope="col">Categoria</th>
-                            <th scope="col">Preço unitário</th>
-                            <th scope="col">Quantidade disponível</th>
-                            <th scope="col">Ações</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td colspan="5">
-                                Os produtos do estoque aparecerão aqui.
-                            </td>
-                        </tr>
-                    </tbody>
-
-                </table>
-
-            </div>
-
-        </section>
-
-        <!-- SOBRE A CONFEITARIA -->
-        <section id="sobre" aria-labelledby="titulo-sobre">
-
-            <header class="secao-cabecalho">
-
-                <p class="subtitulo">Nossa história</p>
-
-                <h2 id="titulo-sobre">Sobre nós</h2>
-
-            </header>
-
-            <div class="sobre-conteudo">
-
-                <p>
-                    A L'amour Cake♡ nasceu da paixão por confeitaria
-                    e da vontade de transformar momentos especiais
-                    em lembranças ainda mais doces.
-                </p>
-
-                <p>
-                    Trabalhamos com bolos, cupcakes e doces preparados
-                    com carinho, valorizando a apresentação, a qualidade
-                    e a experiência de cada cliente.
-                </p>
-
-                <p>
-                    Nosso sistema foi pensado para facilitar a consulta
-                    de produtos, a montagem de pedidos e o controle
-                    das informações da confeitaria.
-                </p>
-
-            </div>
-
-        </section>
-
-        <!-- CONTATO -->
-        <section id="contato" aria-labelledby="titulo-contato">
-
-            <header class="secao-cabecalho">
-
-                <p class="subtitulo">Fale conosco</p>
-
-                <h2 id="titulo-contato">Entre em contato</h2>
-
-                <p>
-                    Preencha os campos abaixo para deixar sua mensagem.
-                </p>
-
-            </header>
-
-            <!-- FORMULÁRIO DE CONTATO -->
-            <form id="contactForm">
-
-                <div class="campo-formulario">
-
-                    <label for="name">Nome completo:</label>
-
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        class="form-control"
-                        placeholder="Digite seu nome completo"
-                        autocomplete="name"
-                        required
-                    >
-
-                </div>
-
-                <div class="campo-formulario">
-
-                    <label for="email">E-mail:</label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        class="form-control"
-                        placeholder="Digite seu e-mail"
-                        autocomplete="email"
-                        required
-                    >
-
-                </div>
-
-                <div class="campo-formulario">
-
-                    <label for="message">Mensagem:</label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        class="form-control"
-                        rows="6"
-                        placeholder="Escreva sua mensagem aqui..."
-                        required
-                    ></textarea>
-
-                </div>
-
-                <div class="acoes-contato">
-
-                    <button type="submit" class="btn btn-primary">
-                        Enviar mensagem
-                    </button>
-
-                </div>
-
-            </form>
 
         </section>
 
     </main>
 
-    <!-- JANELA DE DETALHES DO PRODUTO -->
     <dialog id="productDialog" aria-labelledby="dialogTitle">
 
         <div class="detalhes-produto">
@@ -545,7 +170,6 @@
 
     </dialog>
 
-    <!-- MENSAGENS DO SISTEMA -->
     <div
         id="toast"
         class="mensagem-sistema"
@@ -553,7 +177,6 @@
         aria-live="polite"
     ></div>
 
-    <!-- RODAPÉ -->
     <footer>
 
         <div class="rodape-conteudo">
@@ -569,10 +192,10 @@
             <nav aria-label="Links do rodapé">
 
                 <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#sobre">Sobre nós</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="index.html#inicio">Início</a></li>
+                    <li><a href="index.html#produtos">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
                 </ul>
 
             </nav>
@@ -584,7 +207,8 @@
         </div>
 
     </footer>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="L'amour Cake: relatórios de pedidos e desempenho da confeitaria."
+    >
+    <title>Relatórios | L'amour Cake♡</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header id="inicio">
+        <div class="logo">
+            <a href="index.html#inicio" aria-label="L'amour Cake - Página inicial">
+                <h1>L'amour Cake♡</h1>
+            </a>
+            <p>Sweet Moments</p>
+        </div>
+
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html#inicio">Início</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="estoque.html">Estoque</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="relatorios" aria-labelledby="titulo-relatorios">
+            <header class="secao-cabecalho">
+                <p class="subtitulo">Acompanhe os resultados</p>
+                <h2 id="titulo-relatorios">Relatórios de pedidos</h2>
+                <p>Consulte o resumo dos pedidos registrados no sistema.</p>
+            </header>
+
+            <div class="resumo-relatorios">
+                <article class="cartao-relatorio card shadow-sm">
+                    <h3>Pedidos realizados</h3>
+                    <p id="reportOrders" aria-live="polite">0</p>
+                </article>
+
+                <article class="cartao-relatorio card shadow-sm">
+                    <h3>Valor total vendido</h3>
+                    <p id="reportRevenue" aria-live="polite">R$ 0,00</p>
+                </article>
+
+                <article class="cartao-relatorio card shadow-sm">
+                    <h3>Itens vendidos</h3>
+                    <p id="reportItems" aria-live="polite">0</p>
+                </article>
+            </div>
+
+            <div class="tabela-container table-responsive">
+                <table id="reportTable" class="table table-hover align-middle mb-0">
+                    <caption>Histórico de pedidos</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Número do pedido</th>
+                            <th scope="col">Produtos</th>
+                            <th scope="col">Quantidade</th>
+                            <th scope="col">Valor total</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="5">Nenhum pedido registrado.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="acoes-relatorios">
+                <button type="button" id="resetReports" class="btn btn-outline-secondary">
+                    Limpar relatórios
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape-conteudo">
+            <h2>L'amour Cake♡</h2>
+            <p>Sweet Moments</p>
+            <p>Confeitaria feita com carinho para adoçar seus momentos.</p>
+
+            <nav aria-label="Links do rodapé">
+                <ul>
+                    <li><a href="index.html#inicio">Início</a></li>
+                    <li><a href="index.html#produtos">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <p>&copy; 2026 L'amour Cake♡. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

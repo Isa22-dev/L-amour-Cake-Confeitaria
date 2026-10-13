@@ -9,7 +9,7 @@ const produtos = [
     { nome: "Bolo de cenoura", categoria: "bolos", preco: 38.00 }
 ];
 
-// elementos do HTML que utlizaremos 
+// elementos do HTML que utlizaremos
 const productGrid = document.getElementById("productGrid");
 const productSearch = document.getElementById("productSearch");
 const categoryFilter = document.getElementById("categoryFilter");
@@ -24,6 +24,10 @@ function formatarPreco(preco) {
 
 //funcao que mostrara os produtos na tela
 function mostrarProdutos(lista) {
+    if (!productGrid) {
+        return;
+    }
+
     // Limpa os produtos anteriores antes de atualizar a lista
     productGrid.innerHTML = "";
 
@@ -33,7 +37,7 @@ function mostrarProdutos(lista) {
         return;
     }
 
-    // funcao que percorera a lista de produtos 
+    // funcao que percorera a lista de produtos
     lista.forEach(function(produto) {
         // cria um cartão para representar o produto
         const cartao = document.createElement("article");
@@ -58,8 +62,13 @@ function mostrarProdutos(lista) {
         productGrid.appendChild(cartao);
     });
 }
+
 //pesquisa produtos pelo nome e filtra pela categoria
 function filtrarProdutos() {
+    if (!productGrid || !productSearch || !categoryFilter) {
+        return;
+    }
+
     //converte o texto para minsculas para facilitar a busca
     const pesquisa = productSearch.value.toLowerCase().trim();
     const categoriaSelecionada = categoryFilter.value;
@@ -81,11 +90,15 @@ function filtrarProdutos() {
     mostrarProdutos(produtosFiltrados);
 }
 
-//executa a pesquisa quando o usuário digita
-productSearch.addEventListener("input", filtrarProdutos);
+if (productGrid) {
+    mostrarProdutos(produtos);
 
-//atualiza os produtos quando a categoria muda
-categoryFilter.addEventListener("change", filtrarProdutos);
+    if (productSearch && categoryFilter) {
+        //executa a pesquisa quando o usuário digita
+        productSearch.addEventListener("input", filtrarProdutos);
 
-//exibe todos os produtos assim que a pagina eh carregadaa
-mostrarProdutos(produtos);
+        //atualiza os produtos quando a categoria muda
+        categoryFilter.addEventListener("change", filtrarProdutos);
+    }
+}
+
