@@ -1,0 +1,23 @@
+
+[
+    {
+        "nome": "Bolo de chocolate",
+        "categoria": "bolos",
+        "preco": 45.00
+    },
+    {
+        "nome": "Cupcake de baunilha",
+        "categoria": "cupcakes",
+        "preco": 8.00
+    },
+    {
+        "nome": "Brigadeiro",
+        "categoria": "doces",
+        "preco": 3.50
+    },
+    {
+        "nome": "Bolo de cenoura",
+        "categoria": "bolos",
+        "preco": 38.00
+    }
+]
