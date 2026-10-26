@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 [
     {
@@ -21,3 +22,39 @@
         "preco": 38.00
     }
 ]
+=======
+[
+  {
+    "id": 1,
+    "nome": "Bolo de chocolate",
+    "categoria": "bolos",
+    "preco": 45,
+    "estoque": 8,
+    "descricao": "Bolo de chocolate macio, ideal para aniversários e comemorações."
+  },
+  {
+    "id": 2,
+    "nome": "Cupcake de baunilha",
+    "categoria": "cupcakes",
+    "preco": 8,
+    "estoque": 24,
+    "descricao": "Cupcake de baunilha individual, ótimo para presentear."
+  },
+  {
+    "id": 3,
+    "nome": "Brigadeiro",
+    "categoria": "doces",
+    "preco": 3.5,
+    "estoque": 40,
+    "descricao": "Docinho tradicional de festa, vendido por unidade."
+  },
+  {
+    "id": 4,
+    "nome": "Bolo de cenoura",
+    "categoria": "bolos",
+    "preco": 38,
+    "estoque": 3,
+    "descricao": "Bolo de cenoura fofinho para o café da tarde."
+  }
+]
+>>>>>>> 23a1e14 (versao final do javascript)
