@@ -1,35 +1,10 @@
-<<<<<<< HEAD
-
-[
-    {
-        "nome": "Bolo de chocolate",
-        "categoria": "bolos",
-        "preco": 45.00
-    },
-    {
-        "nome": "Cupcake de baunilha",
-        "categoria": "cupcakes",
-        "preco": 8.00
-    },
-    {
-        "nome": "Brigadeiro",
-        "categoria": "doces",
-        "preco": 3.50
-    },
-    {
-        "nome": "Bolo de cenoura",
-        "categoria": "bolos",
-        "preco": 38.00
-    }
-]
-=======
 [
   {
     "id": 1,
     "nome": "Bolo de chocolate",
     "categoria": "bolos",
     "preco": 45,
-    "estoque": 8,
+    "estoque": 8,   
     "descricao": "Bolo de chocolate macio, ideal para aniversários e comemorações."
   },
   {
@@ -57,4 +32,3 @@
     "descricao": "Bolo de cenoura fofinho para o café da tarde."
   }
 ]
->>>>>>> 23a1e14 (versao final do javascript)
