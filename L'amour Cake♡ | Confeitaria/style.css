@@ -28,34 +28,6 @@
     --raio-cartao: 16px;
 }
 
-:root[data-tema="escuro"],
-:root.tema-escuro {
-    color-scheme: dark;
-    --cor-fundo: #101b28;
-    --cor-superficie: #192a3b;
-    --cor-superficie-secundaria: #22394e;
-    --cor-texto: #e5f2fc;
-    --cor-texto-suave: #aec4d7;
-    --cor-primaria: #83c5f5;
-    --cor-primaria-escura: #5aa9df;
-    --cor-borda: #34516a;
-    --cor-cabecalho: #172c40;
-    --cor-cabecalho-texto: #d8efff;
-    --cor-controle: #142333;
-    --cor-tag: #28465f;
-    --cor-tag-texto: #b8e1ff;
-    --cor-foco: #a8dcff;
-    --cor-texto-botao: #102a3d;
-    --cor-status-sucesso: #244638;
-    --cor-status-alerta: #514326;
-    --cor-status-neutro: #2a3b4a;
-    --cor-status-baixo: #514326;
-    --cor-sucesso: #8dd9b5;
-    --cor-alerta: #f3c779;
-    --cor-perigo: #ff9b9b;
-    --sombra-cartao: 0 8px 24px rgb(0 0 0 / 22%);
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
